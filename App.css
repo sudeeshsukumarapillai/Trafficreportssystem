@@ -1,0 +1,95 @@
+/* App.css */
+
+/* Default styles */
+
+/* Desktop and Laptop Styles */
+@media (min-width: 769px) {
+  /* Desktop and laptop styles */
+
+  /* Add your existing styles for desktop and laptop here */
+
+  #centered {
+    /* Add styles specific to larger screens if needed */
+  }
+
+  table th {
+    font-size: 15px;
+    color: #8d0fdb;
+  }
+
+  table td:first-child {
+    font-weight: bold;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Mobile styles */
+
+  /* Separate left and right-aligned styles for table cells */
+  table tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Add spacing between rows */
+    border-bottom: 1px solid #ccc; /* Add a border between rows */
+    padding-bottom: 10px; /* Add padding between rows */
+  }
+
+  table tbody th,
+  table tbody td {
+    width: 100%; /* Full width for mobile */
+    box-sizing: border-box;
+    padding: 5px; /* Add padding for better spacing */
+  }
+
+  /* Add specific styles for mobile as needed */
+  table th {
+    display: inline-block;
+    width: 48%; /* Adjust the width as needed */
+    font-weight: normal; /* Reset font-weight for table headers */
+    color: black; /* Reset color for table headers */
+  }
+
+
+
+
+  
+
+
+}
+
+/* Add styles for the report-image class */
+.report-image {
+  height: 120px;
+  width: 200px;
+}
+
+/* Add styles for the tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
